@@ -26,6 +26,13 @@ function enterState(newState) {
   }
 }
 
+//This will cause a conflict
+function conflict() {
+  if(!conflict) {
+    this.someStuff
+  }
+}
+
 start();
 
 async function start() {
