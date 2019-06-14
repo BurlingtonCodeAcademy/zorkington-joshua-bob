@@ -27,10 +27,17 @@ function enterState(newState) {
 }
 
 function doSomeThing() {
-  console.log('OMG! There is a conflict!');
+  console.log('LOL its all good!');
 }
 
 doSomeThing();
+
+//This will cause a conflict
+function conflict() {
+  if(!conflict) {
+    this.someStuff
+  }
+}
 
 start();
 
