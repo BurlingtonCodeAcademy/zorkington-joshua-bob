@@ -26,6 +26,12 @@ function enterState(newState) {
   }
 }
 
+function doSomeThing() {
+  console.log('OMG! There is a conflict!');
+}
+
+doSomeThing();
+
 start();
 
 async function start() {
